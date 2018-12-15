@@ -109,3 +109,6 @@
 [submodule "bundle/vim-mipssyntax"]
 	path = bundle/vim-mipssyntax
 	url = https://github.com/harenome/vim-mipssyntax.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
