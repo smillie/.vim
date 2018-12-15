@@ -309,11 +309,11 @@ function! XTermPasteBegin()
 endfunction
 
 " set 80 character line limit
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
+"if exists('+colorcolumn')
+"  set colorcolumn=80
+"else
+"  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+"endif
 
 " ----------------------------------------- "
 " File Type settings 			    		"
@@ -597,5 +597,8 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 
 " Run terraform fmt on save.
 let g:terraform_fmt_on_save=1
+
+" Toggle comments
+map <leader>/ <plug>NERDCommenterToggle<CR>
 
 " vim:ts=2:sw=2:et
